@@ -1,0 +1,28 @@
+#cambiamos el password del usuario root en local.
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('admin');
+
+GRANT ALL ON *.* TO root@'%' IDENTIFIED BY 'admin';
+
+
+
+#Levantamos mysql en cualquier interface
+
+ cat /etc/my.cnf
+
+[mysqld]
+
+#Añadimos y reiniciamos mysql
+
+bind-address = 0.0.0.0
+
+
+#Mirar en el datasource instancia1-ds-xml la line:
+
+ <connection-url>jdbc:mysql://localhost:3306/test</connection-url>
+
+#que se corresponda con la ip del servidor de practicas.
+
+
+#Reiniciamos el servidor mysql
+service mysqld restart
