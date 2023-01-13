@@ -1,7 +1,5 @@
 # Docker Cheat Sheet
 
-**¿Quieres colaborar en este *cheat sheet*? ¡Revisa la sección de [Contribución](#contributing)!**
-
 ## Tabla de Contenidos
 
 * [Por qué Docker](#por-qué-Docker)
@@ -889,22 +887,3 @@ vim httpd.conf
 docker run --rm -it -v "$PWD/httpd.conf:/usr/local/apache2/conf/httpd.conf:ro" -p "80:80" httpd
 ```
 
-## Contribución
-
-Aquí tienes como contribuír a esta chuleta.
-
-### Open README.md
-
-hack click en el [README.md](https://github.com/wsargent/docker-cheat-sheet/blob/master/README.md) <-- este link
-
-![Click](../images/click.png)
-
-### Edit Page
-
-![Edit](../images/edit.png)
-
-### Make Changes and Commit
-
-![Cambios](../images/change.png)
-
-![Commit](../images/commit.png)
