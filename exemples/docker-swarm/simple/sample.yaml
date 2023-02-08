@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "8000:80"
+  busybox:
+    deploy:
+      replicas: 3
+    image: radial/busyboxplus:curl
+    command: /bin/sh -c "while true; do echo Hello!; sleep 10; done"
